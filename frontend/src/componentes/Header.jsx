@@ -16,12 +16,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
       <div className="flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <div className="flex items-center space-x-2 cursor-pointer">
-          <h1 className="text-orange-500 text-3xl font-extrabold">A</h1>
-          <h1 className="text-white text-3xl font-extrabold">K</h1>
-          <h1 className="text-blue-500 text-3xl font-extrabold">S</h1>
-        </div>
+              {/* Logo */}
+      <div className="cursor-pointer">
+        <h1 className="text-3xl font-extrabold">
+          <span className="text-orange-500">P</span>
+          <span className="text-white">ort</span>
+          <span className="text-blue-500">folio</span>
+        </h1>
+      </div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
