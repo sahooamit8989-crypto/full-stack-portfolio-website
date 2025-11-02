@@ -18,12 +18,12 @@ const Showdata = () => {
     try {
       const [introRes, aboutRes, expRes, projRes, techRes, certRes] =
         await Promise.all([
-          axios.get("http://localhost:4000/api/portfolio/intro"),
-          axios.get("http://localhost:4000/api/portfolio/about"),
-          axios.get("http://localhost:4000/api/portfolio/experience"),
-          axios.get("http://localhost:4000/api/portfolio/project"),
-          axios.get("http://localhost:4000/api/portfolio/technologie"),
-          axios.get("http://localhost:4000/api/portfolio/certification"),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/intro`),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/about`),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/experience`),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/project`),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/technologie`),
+          axios.get(`${import.meta.env.VITE_URI}/api/portfolio/certification`),
         ]);
 
       setData({
